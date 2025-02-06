@@ -168,5 +168,217 @@
     </section>
 
     <!-- Fim Section Tabs -->
+
+    <!-- Section Planos -->
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-4">Planos e Preços</h2>
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Planos</th>
+              <th scope="col">Recursos</th>
+              <th scope="col">Preço Mensal</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Básico</td>
+              <td>Suporte simples, site educacional, 1 conta de e-mail</td>
+              <td>R$ 100,00</td>
+              <td>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPlano"
+                  class="btn btn-outline-primary"
+                >
+                  Contratar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Profissional</td>
+              <td>Suporte intermediário, Site + 1 blog, 5 contas de e-mail</td>
+              <td>R$ 250,00</td>
+              <td>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPlano"
+                  class="btn btn-outline-primary"
+                >
+                  Contratar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>Suporte avançado, E-commerce, contas de e-mail ilimitadas</td>
+              <td>R$ 500,00</td>
+              <td>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPlano"
+                  class="btn btn-outline-primary"
+                >
+                  Contratar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- div p/ organização: Modais -->
+        <div>
+          <!-- Modal: Plano Básico -->
+          <div
+            class="modal fade"
+            id="modalPlano"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Contratar planos
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="inputName" class="form-label">Nome</label>
+                      <input type="name" class="form-control" id="inputName" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputEmail" class="form-label">E-mail</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail"
+                        aria-describedby="emailHelp"
+                      />
+                      <div id="emailHelp" class="form-text">
+                        Nunca compartilharemos seu e-mail com ninguém.
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                  >
+                    Contratar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim Modal: Plano Básico -->
+
+          <!-- Modal: Plano Profissional -->
+          <div
+            class="modal fade"
+            id="modalPro"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal Profissional
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Plano Profissional</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim Modal: Plano Profissional -->
+
+          <!-- Modal: Plano Premium -->
+          <div
+            class="modal fade"
+            id="modalPremium"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal Premium
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Plano Premium</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim Modal: Plano Premium -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fim Section Planos -->
   </body>
 </html>
